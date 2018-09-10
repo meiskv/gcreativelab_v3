@@ -1,0 +1,106 @@
+.case-study-slide-container .case__holder .case__left .case__description p{
+    @include breakpoint(large down) { 
+        font: 0.8rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    }
+
+    @include breakpoint(small down) {
+        font: 0.8rem/150% Century "futura-pt", AppleGothic, sans-serif;
+    }
+}
+
+.case-study-slide-container .case__holder .case__left .case__deliverables h4{
+    @include breakpoint(large down) { 
+        font: normal 1rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    }
+    @include breakpoint(small down) {
+        font: normal 1rem/150% "futura-pt", AppleGothic, sans-serif;
+    }
+}
+
+.case-study-slide-container .case__holder .case__left .case__title h1{
+    @include breakpoint(large down) { 
+        font: 700 1.5rem/100% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    }
+    @include breakpoint(small down) {
+        font: 700 1.5rem/100% "futura-pt", AppleGothic, sans-serif;
+    }
+}
+
+.case-study-slide-container .case__holder .case__left{   
+    @include breakpoint(large down) { 
+        align-self: flex-end;
+        position: relative;
+    }
+    @include breakpoint(small down) { 
+        align-self: flex-end;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+
+// CASE INNER
+.case-inner-slide-container .case__slide .case__inner__slide__holder{
+    @include breakpoint(large down) {
+        width: auto;
+    }
+}
+.case-inner-slide-container .main-slide .case__inner__holder{
+    @include breakpoint(large down) {
+        align-self: flex-end;
+    }
+}
+.case__inner__logo{
+    img{
+        @include breakpoint(large down) {
+            max-width: 100px !important;
+            margin: 0rem;
+        }
+    }
+}
+
+.case-inner-slide-container .case__pagination .case__next__title{
+    @include breakpoint(large down) {
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+    }
+}
+
+.case-inner-slide-container .case__pagination .case__prev__title{
+    @include breakpoint(large down) {
+        position: absolute;
+        bottom: 1.3rem;
+        left: 2rem;
+    }
+}
+
+.case-inner-slide-container .case__pagination .case__next__title span{
+    @include breakpoint(large down) {
+        font: 700 2rem/100% Century Gothic,CenturyGothic,sans-serif;
+        color: #d92360;
+        transition: .3s;
+    }
+    @include breakpoint(small down) {
+        font: 700 1.4rem/100% "futura-pt", AppleGothic, sans-serif;
+    }
+}
+
+.case-inner-slide-container .case__pagination .case__inner__pagination__holder .case__inner__btm .case__page__holder img{
+    @include breakpoint(large down) {
+        max-width: 40px;
+        bottom: 2rem;
+        right: 2.8rem;
+    }
+}
+
+.case-inner-slide-container .second-slide{
+    @include breakpoint(large down) {
+        width: 100%;
+    }
+    @include breakpoint(small down) {
+        width: auto;
+    }
+}
