@@ -51,7 +51,7 @@ body{
         position: relative;
         z-index: 1;
         @include breakpoint(small down) { 
-            padding-left: 0;
+            padding-left: 2.5rem;
             align-self: flex-end;
         }
         @include breakpoint(large only) {
@@ -214,7 +214,8 @@ $pink: #D81C5C;
         font: 300 0.8rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
         transform: translateY(20px);
         @include breakpoint(small down) {
-            font: 300 0.8rem/150% "futura-pt", AppleGothic, sans-serif; 
+            font: 300 0.8rem/150% "futura-pt", AppleGothic, sans-serif;
+            opacity: 1;
         }
     }
     .case__home__btn{
@@ -291,7 +292,7 @@ $pink: #D81C5C;
 
 .home-slide-container .swiper-wrapper > .swiper-slide-active{
     transition: 1.8s;
-    width: 29vw;
+    // width: 86%;
 }
 
 .home-slide-container .swiper-wrapper > .swiper-slide-active .case__home__category p{
@@ -319,6 +320,9 @@ $pink: #D81C5C;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include breakpoint(small down) {
+            max-height: 736px;
+        }
     }
 }
 
@@ -372,6 +376,9 @@ $pink: #D81C5C;
     position: fixed !important;
     background: $blue;
     border-right: 1px solid #47576b;
+    @include breakpoint(small down) {
+        background: #fff;
+    }
 }
 
 
@@ -517,6 +524,10 @@ $pink: #D81C5C;
     .swiper-wrapper{
         position: relative;
         z-index: 2;
+        @include breakpoint(small down) {
+            display: flex;
+            align-items: flex-end;
+        }
     }
     .swiper-slick{
         width: 100vw !important;
@@ -531,7 +542,7 @@ $pink: #D81C5C;
         align-items: center;
         width: 20vw;
         @include breakpoint(small down) {
-            width: 85vw !important;
+           width: 86.5%;
         }
     }
     .main-slide{
@@ -619,6 +630,9 @@ $pink: #D81C5C;
     right: 2rem;
     font: 900 1.625rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     color: $pink;
+    @include breakpoint(small down) { 
+        opacity: 0;
+    }
 }
 
 .left-overlay{

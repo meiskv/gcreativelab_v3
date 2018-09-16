@@ -41,13 +41,9 @@ window.requestAnimationFrame(function() {
 
           let $wwCh = window.innerHeight;
 
-          var homeHeight = $('.home-slide-container .swiper-slide');
+          
           var menuHeight = $('.menu');
           TweenMax.set(menuHeight,{height: $wwCh});
-
-          
-
-          TweenMax.set(homeHeight,{height: $wwCh});
 
           
           
@@ -203,7 +199,8 @@ window.requestAnimationFrame(function() {
           swiper.update()
 
           function getTransform(el) {
-            var results = $(el).css('-webkit-transform').match(/matrix(?:(3d)\(\d+(?:, \d+)*(?:, (\d+))(?:, (\d+))(?:, (\d+)), \d+\)|\(\d+(?:, \d+)*(?:, (\d+))(?:, (\d+))\))/)
+            var results = $(el).css('-webkit-transform').match(/matrix(?:(3d)\(-{0,1}\d+\.?\d*(?:, -{0,1}\d+\.?\d*)*(?:, (-{0,1}\d+\.?\d*))(?:, (-{0,1}\d+\.?\d*))(?:, (-{0,1}\d+\.?\d*)), -{0,1}\d+\.?\d*\)|\(-{0,1}\d+\.?\d*(?:, -{0,1}\d+\.?\d*)*(?:, (-{0,1}\d+\.?\d*))(?:, (-{0,1}\d+\.?\d*))\))/
+          )
         
             if(!results) return [0, 0, 0];
             if(results[1] == '3d') return results.slice(2,5);
@@ -219,11 +216,107 @@ window.requestAnimationFrame(function() {
         let finalSliderMove;
         let winCurrentWidth = 100;
 
+        let pageWidth = window.innerWidth;
+
+        if(pageWidth<=414){
+
+
+          var swiper2 = new Swiper('.home-slide-container', {
+            direction: 'vertical',
+            mousewheel: true,
+            autoHeight: true,
+            grabCursor: true,
+            freeMode: true,
+            freeModeFluid: true,
+            freeModeMomentumVelocityRatio: 0.5,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            on: {
+              init: function () {
+                
+                var slider = this;
+
+                let $wwCh = window.innerHeight;
+                var homeHeight = $('.home-slide-container .swiper-slide');
+                TweenMax.set(homeHeight,{height: $wwCh});
+              
+                // let slideY = getTransform($('.home-slide-container .swiper-wrapper'))[1];
+
+              },
+              slideChangeTransitionEnd: function (){
+                let slider = this;
+
+                let slideLength = $('.home-slide-container .swiper-slide').length-1;
+                let slideHeight = window.innerHeight;
+
+                let slideTotalHeight = -(slideHeight*slideLength);
+                let slideMaxHeight = slider.getTranslate();
+
+                if(slideTotalHeight>=slideMaxHeight+5){
+                  TweenLite.to(slideWrapper,1,{force3D:true,y: slideTotalHeight})
+                }
+
+                console.log(slideTotalHeight);
+                console.log(slideMaxHeight);
+                
+
+              },
+              progress: function(){
+                // let slider = this;
+
+                // console.log(slider);
+
+                // let slideLength = $('.home-slide-container .swiper-slide').length-1;
+                // let slideHeight = window.innerHeight;
+
+                // let slideTotalHeight = -(slideHeight*slideLength);
+                // let slideMaxHeight = slider.getTranslate();
+
+                // if(slideTotalHeight>=slideMaxHeight){
+                //   TweenLite.to(slideWrapper,0.5,{force3D:true,y: slideMaxHeight})
+                // }
+              },
+              resize: function(){
+  
+  
+                location.reload();
+              },
+              slideChange: function(){
+                // let slider = this;
+                
+                // let slideLength = $('.home-slide-container .swiper-slide').length-1;
+                // let slideHeight = window.innerHeight;
+
+                // let slideTotalHeight = -(slideHeight*slideLength);
+                // let slideMaxHeight = slider.getTranslate();
+
+                // if(slideTotalHeight>=slideMaxHeight){
+                //   TweenLite.to(slideWrapper,0.5,{force3D:true,y: slideMaxHeight})
+                // }
+                
+  
+                
+              },
+              reachEnd: function(){
+                let reachThis = this;
+                
+              }
+            }
+        });
+        }else{
+
+          let $wwCh = window.innerHeight;
+          
+          var homeHeight = $('.home-slide-container .swiper-slide');
+          TweenMax.set(homeHeight,{height: $wwCh});
+
           var swiper2 = new Swiper('.home-slide-container', {
             direction: 'horizontal',
             slidesPerView: 'auto',
             mousewheel: true,
-            centeredSlides: true,
+            // centeredSlides: true,
             grabCursor: true,
             freeMode: true,
             freeModeFluid: true,
@@ -249,31 +342,31 @@ window.requestAnimationFrame(function() {
             },
             on: {
               init: function () {
-
+  
                 TweenLite.set('.home__backBtn',{autoAlpha: 0})
                 
                 var slider = this;
                 let $wwCh = window.innerWidth;
                                 
-
+  
                   if (slider.activeIndex === 0) {
                    
                     finalSliderMove = slider.getTranslate()-slideWrapper.position().left+winCurrentWidth;
                     
                     TweenLite.to(slideWrapper,0.5,{force3D:true,x: finalSliderMove})
-
+  
                     slider.slideNext();
                   } else {
                     slider.slidePrev();
                   }
               
-
+  
               },
               slideChangeTransitionEnd: function (){
                 let transEndSlider = this;
-
+  
                 let $wwCh = window.innerWidth;
-
+  
                 if($wwCh>=768){
                   console.log(transEndSlider.getTranslate());
                   if(transEndSlider.getTranslate()<=(-300)){
@@ -295,7 +388,7 @@ window.requestAnimationFrame(function() {
                     
                   }
                 }
-
+  
                 if($wwCh<=415){
                   if(transEndSlider.getTranslate()<=500){
                       TweenLite.to('#logo__holder_loaded',1,{
@@ -316,7 +409,7 @@ window.requestAnimationFrame(function() {
                     
                   }
                 }
-
+  
                 if($wwCh<=376){
                   if(transEndSlider.getTranslate()<=500){
                       TweenLite.to('#logo__holder_loaded',1,{
@@ -340,13 +433,13 @@ window.requestAnimationFrame(function() {
                 
                   
                 
-
+  
                 if($wwCh<=414){
-                  console.log(transEndSlider.getTranslate());
-                  console.log(finalSliderMove);
+                  // console.log(transEndSlider.getTranslate());
+                  // console.log(finalSliderMove);
                   if(transEndSlider.getTranslate()-50>=finalSliderMove){
                     TweenLite.to(slideWrapper, 1.5,{force3D:true,x: finalSliderMove,ease:Back.easeInOut})
-
+  
                   }
                 }else{
                   if(transEndSlider.getTranslate()-50>=finalSliderMove){
@@ -355,17 +448,17 @@ window.requestAnimationFrame(function() {
                   }
                 }
               
-
+  
               },
               resize: function(){
-
-
+  
+  
                 location.reload();
               },
               slideChange: function(){
                 let slideChangeEndSlider = this;
                 let $wwCh = window.innerWidth;
-
+  
                 if($wwCh<=415){
                   
                   // console.log(slideChangeEndSlider.getTranslate());
@@ -394,13 +487,13 @@ window.requestAnimationFrame(function() {
                       }
               
           
-
+  
                 
               },
               reachEnd: function(){
                 let reachThis = this;
                 TweenLite.to('.home__backBtn',0.5,{autoAlpha: 1})
-
+  
                 $('.home__backBtn').click(function(){
                   // TweenLite.to(slideWrapper, 3,{force3D:true,x: finalSliderMove,ease:Expo.easeInOut})
                   // reachThis.slideTo(1);
@@ -408,7 +501,12 @@ window.requestAnimationFrame(function() {
                 });
               }
             }
-        });
+          });
+          
+        }
+
+
+
 
         var gpreload = new TimelineMax({repeat: -1, delay: 1});
         
