@@ -150,6 +150,15 @@
               let pageWidth = window.innerWidth;
 
               if(pageWidth<=414){
+
+                TweenLite.to('#logo__holder_loaded',1,{
+                  top: 0,
+                  left: 2.5,
+                  width: '50px',
+                  height: '65px',
+                  ease: Expo.easeInOut, 
+                });
+
                 var serviceGSwiper = new Swiper('.services__container', {
                   direction: 'vertical',
                   mousewheel: true,
@@ -184,9 +193,6 @@
                         if(slideTotalHeight>=slideMaxHeight+5){
                           TweenLite.to(slideWrapper,1,{force3D:true,y: slideTotalHeight})
                         }
-          
-                        console.log(slideTotalHeight);
-                        console.log(slideMaxHeight);
           
                       }
                 }

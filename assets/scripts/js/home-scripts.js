@@ -220,6 +220,14 @@ window.requestAnimationFrame(function() {
 
         if(pageWidth<=414){
 
+          TweenLite.to('#logo__holder_loaded',1,{
+            top: 0,
+            left: 2.5,
+            width: '50px',
+            height: '65px',
+            ease: Expo.easeInOut, 
+          });
+
 
           var swiper2 = new Swiper('.home-slide-container', {
             direction: 'vertical',
@@ -660,7 +668,7 @@ window.requestAnimationFrame(function() {
                       console.log('done');
                       
                       TweenLite.to('#logo__holder_loaded',1,{
-                        top: 32,
+                            top: 32,
                             left: 80,
                             width: '103px',
                             height: '115px',

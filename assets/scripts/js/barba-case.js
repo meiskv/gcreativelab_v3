@@ -155,6 +155,14 @@
 
               if(pageWidth<=414){
 
+                TweenLite.to('#logo__holder_loaded',1,{
+                  top: 0,
+                  left: 2.5,
+                  width: '50px',
+                  height: '65px',
+                  ease: Expo.easeInOut, 
+                });
+
                 var caseStudy = new Swiper('.case-study-slide-container', {
                   direction: 'vertical',
                   mousewheel: true,
