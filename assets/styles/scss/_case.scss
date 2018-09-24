@@ -453,7 +453,7 @@
     width: auto;
     @include breakpoint(small down) {
         width: auto;
-        height: 100%;
+        height: auto;
     }
 }
 

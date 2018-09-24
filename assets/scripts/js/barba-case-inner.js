@@ -146,76 +146,127 @@
               });
       
               swiper.update()
+
+              let pageWidth = window.innerWidth;
+
+              if(pageWidth<=414){
+                TweenLite.to('#logo__holder_loaded',1,{
+                  top: 0,
+                  left: 2.5,
+                  width: '50px',
+                  height: '65px',
+                  ease: Expo.easeInOut, 
+                });
+
+                var caseInner = new Swiper('.case-inner-slide-container', {
+                  direction: 'vertical',
+                  mousewheel: true,
+                  grabCursor: true,
+                  autoHeight: true,
+                  freeMode: true,
+                  freeModeFluid: true,
+                  freeModeMomentumVelocityRatio: 0.5,
+                 on:{
+                    init: function (){
+                      let $wwCh = window.innerHeight;
+                      
+                      var homeHeight = $('.case-inner-slide-container .swiper-slide');
+                    
+        
+                      TweenMax.set(homeHeight,{height: 'auto'});
+                    },
+                    slideChangeTransitionEnd: function (){
+                      let slider = this;
+                      
+                      let slideWrapper = $('.case-inner-slide-container > .swiper-wrapper');
+        
+                      let slideLength = $('.case-inner-slide-container .swiper-slide').length-1;
+                      let slideHeight = window.innerHeight;
+        
+                      let slideTotalHeight = -(slideHeight*slideLength);
+                      let slideMaxHeight = slider.getTranslate();
+        
+                      if(slideTotalHeight>=slideMaxHeight+5){
+                        TweenLite.to(slideWrapper,1,{force3D:true,y: slideTotalHeight})
+                      }
+                  }
+                 }
+              });
+              }else{
+
+                var caseInner = new Swiper('.case-inner-slide-container', {
+                  direction: 'horizontal',
+                  slidesPerView: 'auto',
+                  mousewheel: true,
+                  freeMode: true,
+                  // infinite: true,
+                  mousewheelSensitivity: 0.02,
+                  freeModeFluid: true,
+                  parallax: true,
+                  freeModeMomentumVelocityRatio: 0.5,
+                 on:{
+                  slideChangeTransitionEnd: function (){
+                    let transEndSlider = this;
+    
+                    let $wwCh = window.innerWidth;
+  
+                    if($wwCh>=768){
+                      console.log(transEndSlider.getTranslate());
+                      if(transEndSlider.getTranslate()<=(-300)){
+                          TweenLite.to('#logo__holder_loaded',1,{
+                            top: 0,
+                            left: 2.5,
+                            width: '50px',
+                            height: '65px',
+                            ease: Expo.easeInOut, 
+                          });
+                      }else{
+                        TweenLite.to('#logo__holder_loaded',1,{
+                          top: 32,
+                              left: 80,
+                              width: '103px',
+                              height: '115px',
+                              ease: Expo.easeInOut, 
+                        });
+                        
+                      }
+                    }
+    
+                    if($wwCh<=414){
+                          TweenLite.to('#logo__holder_loaded',1,{
+                            top: 0,
+                            left: 2.5,
+                            width: '50px',
+                            height: '65px',
+                            ease: Expo.easeInOut, 
+                          });
+                    }
+    
+                    if($wwCh<=376){
+                          TweenLite.to('#logo__holder_loaded',1,{
+                            top: 0,
+                            left: 1,
+                            width: '50px',
+                            height: '65px',
+                            ease: Expo.easeInOut, 
+                          });
+                    }
+                    
+                      
+                    // if(transEndSlider.getTranslate()-50>=finalSliderMove){
+                    //    TweenLite.to(slideWrapper, 1.5,{force3D:true,x: finalSliderMove,ease:Back.easeInOut})
+                    //    transEndSlider.slideTo(1);
+                    // }
+                  
+    
+                  }
+                 }
+              });
+
+              }
       
 
-              var caseInner = new Swiper('.case-inner-slide-container', {
-                direction: 'horizontal',
-                slidesPerView: 'auto',
-                mousewheel: true,
-                freeMode: true,
-                // infinite: true,
-                mousewheelSensitivity: 0.02,
-                freeModeFluid: true,
-                parallax: true,
-                freeModeMomentumVelocityRatio: 0.5,
-               on:{
-                slideChangeTransitionEnd: function (){
-                  let transEndSlider = this;
-  
-                  let $wwCh = window.innerWidth;
-
-                  if($wwCh>=768){
-                    console.log(transEndSlider.getTranslate());
-                    if(transEndSlider.getTranslate()<=(-300)){
-                        TweenLite.to('#logo__holder_loaded',1,{
-                          top: 0,
-                          left: 2.5,
-                          width: '50px',
-                          height: '65px',
-                          ease: Expo.easeInOut, 
-                        });
-                    }else{
-                      TweenLite.to('#logo__holder_loaded',1,{
-                        top: 32,
-                            left: 80,
-                            width: '103px',
-                            height: '115px',
-                            ease: Expo.easeInOut, 
-                      });
-                      
-                    }
-                  }
-  
-                  if($wwCh<=414){
-                        TweenLite.to('#logo__holder_loaded',1,{
-                          top: 0,
-                          left: 2.5,
-                          width: '50px',
-                          height: '65px',
-                          ease: Expo.easeInOut, 
-                        });
-                  }
-  
-                  if($wwCh<=376){
-                        TweenLite.to('#logo__holder_loaded',1,{
-                          top: 0,
-                          left: 1,
-                          width: '50px',
-                          height: '65px',
-                          ease: Expo.easeInOut, 
-                        });
-                  }
-                  
-                    
-                  // if(transEndSlider.getTranslate()-50>=finalSliderMove){
-                  //    TweenLite.to(slideWrapper, 1.5,{force3D:true,x: finalSliderMove,ease:Back.easeInOut})
-                  //    transEndSlider.slideTo(1);
-                  // }
-                
-  
-                }
-               }
-            });
+              
             
             // let caseWrapper = document.querySelector('.case-inner-slide-container');
             // let caseWrapperScroll = $('.case-inner-slide-container > .swiper-wrapper');

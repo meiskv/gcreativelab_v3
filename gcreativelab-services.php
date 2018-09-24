@@ -28,14 +28,12 @@ get_header(); ?>
 						</div>
 						
 						<ul id="social">
-							<li>FACEBOOK</li>
-							<li>.</li>
-							<li>INSTAGRAM</li>
-							<li>.</li>
-							<li>LINKEDIN</li>
-							<li>.</li>
-							<li>TWITTER</li>
-						</ul>
+						<li><a href="https://www.facebook.com/GCreativeGlobal/">FACEBOOK</a></li>
+						<li>.</li>
+						<li><a href="https://www.instagram.com/gcreativelab/">INSTAGRAM</a></li>
+						<li>.</li>
+						<li><a href="https://www.linkedin.com/company/g-creative/">LINKEDIN</a></li>
+					</ul>
 
 						</div>
 						<div class="swiper-slide content">
