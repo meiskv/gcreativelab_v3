@@ -147,73 +147,121 @@
                 }
               });
 
-              var serviceGSwiper = new Swiper('.services__container', {
-                direction: 'horizontal',
-                slidesPerView: 'auto',
-                mousewheel: true,
-                freeMode: true,
-                infinite: true,
-                mousewheelSensitivity: 0.02,
-                freeModeFluid: true,
-                speed: 150,
-                parallax: true,          
-                freeModeMomentumVelocityRatio: 0.5,
-                on:{
-                  slideChangeTransitionEnd: function (){
-                      let transEndSlider = this;
-          
-                      let $wwCh = window.innerWidth;
-          
+              let pageWidth = window.innerWidth;
 
-                      if($wwCh>=768){
-                        console.log(transEndSlider.getTranslate());
-                        if(transEndSlider.getTranslate()<=(-300)){
-                            TweenLite.to('#logo__holder_loaded',1,{
-                              top: 0,
-                              left: 2.5,
-                              width: '50px',
-                              height: '65px',
-                              ease: Expo.easeInOut, 
-                            });
-                        }else{
-                          TweenLite.to('#logo__holder_loaded',1,{
-                            top: 32,
-                                left: 80,
-                                width: '103px',
-                                height: '115px',
-                                ease: Expo.easeInOut, 
-                          });
-                          
+              if(pageWidth<=414){
+                var serviceGSwiper = new Swiper('.services__container', {
+                  direction: 'vertical',
+                  mousewheel: true,
+                  grabCursor: true,
+                  autoHeight: true,
+                  freeMode: true,
+                  freeModeFluid: true,
+                  freeModeMomentumVelocityRatio: 0.5,
+                  on:{
+
+                    init: function(){
+                      let $wwCh = window.innerHeight;
+        
+                      var servicesHeight = $('.services__container .swiper-slide');
+                 
+        
+                      TweenMax.set(servicesHeight,{height: $wwCh});
+                      // TweenMax.set([mainSlide,aboutHunts,aboutFifty,aboutSlide,aboutPagination],{height: $wwCh});
+                    },
+                    slideChangeTransitionEnd: function (){
+                        let transEndSlider = this;
+                        let slider = this;
+                        
+                        let slideWrapper = $('.services__container > .swiper-wrapper');
+          
+                        let slideLength = $('.services__container .swiper-slide').length-1;
+                        let slideHeight = window.innerHeight;
+          
+                        let slideTotalHeight = -(slideHeight*slideLength);
+                        let slideMaxHeight = slider.getTranslate();
+          
+                        if(slideTotalHeight>=slideMaxHeight+5){
+                          TweenLite.to(slideWrapper,1,{force3D:true,y: slideTotalHeight})
                         }
+          
+                        console.log(slideTotalHeight);
+                        console.log(slideMaxHeight);
+          
                       }
-          
-                      if($wwCh<=415){
-          
-          
-                        if(transEndSlider.getTranslate()<=(-300)){
-                            TweenLite.to('#logo__holder_loaded',1,{
-                              top: 0,
-                              left: 2.5,
-                              width: '50px',
-                              height: '65px',
-                              ease: Expo.easeInOut, 
-                            });
-                        }else{
-                          TweenLite.to('#logo__holder_loaded',1,{
-                            top: 32,
-                                left: 80,
-                                width: '103px',
-                                height: '115px',
+                }
+                });
+              }else{
+                var serviceGSwiper = new Swiper('.services__container', {
+                  direction: 'horizontal',
+                  slidesPerView: 'auto',
+                  mousewheel: true,
+                  freeMode: true,
+                  infinite: true,
+                  mousewheelSensitivity: 0.02,
+                  freeModeFluid: true,
+                  speed: 150,
+                  parallax: true,          
+                  freeModeMomentumVelocityRatio: 0.5,
+                  on:{
+                    slideChangeTransitionEnd: function (){
+                        let transEndSlider = this;
+            
+                        let $wwCh = window.innerWidth;
+            
+  
+                        if($wwCh>=768){
+                          console.log(transEndSlider.getTranslate());
+                          if(transEndSlider.getTranslate()<=(-300)){
+                              TweenLite.to('#logo__holder_loaded',1,{
+                                top: 0,
+                                left: 2.5,
+                                width: '50px',
+                                height: '65px',
                                 ease: Expo.easeInOut, 
-                          });
-                          
+                              });
+                          }else{
+                            TweenLite.to('#logo__holder_loaded',1,{
+                              top: 32,
+                                  left: 80,
+                                  width: '103px',
+                                  height: '115px',
+                                  ease: Expo.easeInOut, 
+                            });
+                            
+                          }
                         }
+            
+                        if($wwCh<=415){
+            
+            
+                          if(transEndSlider.getTranslate()<=(-300)){
+                              TweenLite.to('#logo__holder_loaded',1,{
+                                top: 0,
+                                left: 2.5,
+                                width: '50px',
+                                height: '65px',
+                                ease: Expo.easeInOut, 
+                              });
+                          }else{
+                            TweenLite.to('#logo__holder_loaded',1,{
+                              top: 32,
+                                  left: 80,
+                                  width: '103px',
+                                  height: '115px',
+                                  ease: Expo.easeInOut, 
+                            });
+                            
+                          }
+                        }
+            
+            
                       }
-          
-          
-                    }
+                }
+                });  
               }
-              });
+
+              
       
               swiper.update()
       

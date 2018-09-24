@@ -3,6 +3,10 @@
     // wait until window is loaded - all images, styles-sheets, fonts, links, and other media assets
     // import { TimelineMax } from "gsap";
     // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
+
+    var swiper = new Swiper('.aboutxx-container', {
+      direction: 'vertical',
+    });
     
         
 var Aboutpage = Barba.BaseView.extend({
@@ -13,6 +17,8 @@ onEnter: function() {
     var aboutHeight = $('.about-container .swiper-slide');
     let $wwCh = window.innerHeight;
     TweenMax.set(aboutHeight,{height: $wwCh});
+
+    console.log($wwCh);
 
     var menuHeight = $('.menu');
     TweenMax.set(menuHeight,{height: $wwCh});
@@ -166,28 +172,78 @@ onEnterCompleted: function() {
 
 
 
-    var $content = new TimelineMax({delay: 0.5});
+    // var $content = new TimelineMax({delay: 0.5});
     
             // ABOUT ANIMATION STARTS
-    var $content__header = $('.content__header');
-    var $content__subheader = $('.content__subheader');
-    var $content__description = $('.content__description div');
+    // var $content__header = $('.content__header');
+    // var $content__subheader = $('.content__subheader');
+    // var $content__description = $('.content__description div');
 
 
-    var $content__headerST = new SplitText([$content__header], {type:"words"});
-    var $content__subheaderST = new SplitText([$content__subheader], {type:"words"});
-    var $content__descriptionST = new SplitText([$content__description], {type:"words"});
+    // var $content__headerST = new SplitText([$content__header], {type:"words"});
+    // var $content__subheaderST = new SplitText([$content__subheader], {type:"words"});
+    // var $content__descriptionST = new SplitText([$content__description], {type:"words"});
 
-    $content__headerST.split({type:"chars, words"})
-    $content__subheaderST.split({type:"chars, words"})
-    $content__descriptionST.split({type:"chars, words,lines"})
+    // $content__headerST.split({type:"chars, words"})
+    // $content__subheaderST.split({type:"chars, words"})
+    // $content__descriptionST.split({type:"chars, words,lines"})
 
-    $content.staggerFromTo($content__headerST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03)
-    $content.staggerFromTo($content__subheaderST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03,'-=1')
-    $content.staggerFromTo($content__descriptionST.words, 0.5, {y:50, autoAlpha:0},{y:0, autoAlpha:1,ease: Expo.easeInOut}, 0.01,'-=1')
+    // $content.staggerFromTo($content__headerST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03)
+    // $content.staggerFromTo($content__subheaderST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03,'-=1')
+    // $content.staggerFromTo($content__descriptionST.words, 0.5, {y:50, autoAlpha:0},{y:0, autoAlpha:1,ease: Expo.easeInOut}, 0.01,'-=1')
 
+ 
 
-    var aboutSlider = new Swiper('.about-container', {
+    let pageWidth = window.innerWidth;
+
+    if(pageWidth<=414){
+      var aboutSlider = new Swiper('.about-container', {
+          direction: 'vertical',
+          mousewheel: true,
+          grabCursor: true,
+          autoHeight: true,
+          freeMode: true,
+          freeModeFluid: true,
+          freeModeMomentumVelocityRatio: 0.5,
+        on:{
+            init: function(){
+              let $wwCh = window.innerHeight;
+
+              var homeHeight = $('.about-container .swiper-slide');
+              var mainSlide = $('.about-container .main-slide');
+              var aboutWhole = $('.about-container .about__whole_map');
+              var aboutHunts = $('.about-container .about__huntsworth');
+              var aboutFifty = $('.about-container .about__slide__fifty__left_1');
+              var aboutSlide = $('.about-container .slide-about');
+              var aboutPagination = $('.about-container .page__pagination');
+
+              TweenMax.set(homeHeight,{height: $wwCh});
+              // TweenMax.set([mainSlide,aboutHunts,aboutFifty,aboutSlide,aboutPagination],{height: $wwCh});
+            },
+            slideChangeTransitionEnd: function (){
+              let slider = this;
+
+              let slideWrapper = $('.about-container > .swiper-wrapper');
+
+              let slideLength = $('.about-container .swiper-slide').length-1;
+              let slideHeight = window.innerHeight;
+
+              let slideTotalHeight = -(slideHeight*slideLength);
+              let slideMaxHeight = slider.getTranslate();
+
+              if(slideTotalHeight>=slideMaxHeight+5){
+                TweenLite.to(slideWrapper,1,{force3D:true,y: slideTotalHeight})
+              }
+
+              console.log(slideTotalHeight);
+              console.log(slideMaxHeight);
+              
+
+            }
+        }
+        });
+    }else{
+      var aboutSlider = new Swiper('.about-container', {
         direction: 'horizontal',
         slidesPerView: 'auto',
         mousewheel: true,
@@ -250,6 +306,9 @@ onEnterCompleted: function() {
               }
         }
         });
+    }
+
+    
         
 },
 onLeave: function() {

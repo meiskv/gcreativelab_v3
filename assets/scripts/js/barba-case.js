@@ -151,95 +151,118 @@
               swiper.update()
       
 
-              var caseStudy = new Swiper('.case-study-slide-container', {
-                direction: 'horizontal',
-                slidesPerView: 'auto',
-                mousewheel: true,
-                freeMode: true,
-                infinite: true,
-                mousewheelSensitivity: 0.02,
-                freeModeFluid: true,
-                freeModeMomentumVelocityRatio: 0.5,
-                pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
-                },
-                on:{
-                  slideChangeTransitionEnd: function (){
-                      let transEndSlider = this;
-          
-                      let $wwCh = window.innerWidth;
-          
+              let pageWidth = window.innerWidth;
 
-                      if($wwCh>=768){
-                        console.log(transEndSlider.getTranslate());
-                        if(transEndSlider.getTranslate()<=(-300)){
-                            TweenLite.to('#logo__holder_loaded',1,{
-                              top: 0,
-                              left: 2.5,
-                              width: '50px',
-                              height: '65px',
-                              ease: Expo.easeInOut, 
-                            });
-                        }else{
-                          TweenLite.to('#logo__holder_loaded',1,{
-                            top: 32,
-                                left: 80,
-                                width: '103px',
-                                height: '115px',
-                                ease: Expo.easeInOut, 
-                          });
-                          
-                        }
+              if(pageWidth<=414){
+
+                var caseStudy = new Swiper('.case-study-slide-container', {
+                  direction: 'vertical',
+                  mousewheel: true,
+                  grabCursor: true,
+                  autoHeight: true,
+                  freeMode: true,
+                  freeModeFluid: true,
+                  freeModeMomentumVelocityRatio: 0.5,
+                  on:{
+                    init: function(){
+                      let $wwCh = window.innerHeight;
+                      var caseHeight = $('.case-study-slide-container .swiper-slide');
+                      TweenMax.set(caseHeight,{height: $wwCh});
+                    },
+                    slideChangeTransitionEnd: function (){
+                      let transEndSlider = this;
+                      let slider = this;
+                      
+                      let slideWrapper = $('.case-study-slide-container > .swiper-wrapper');
+        
+                      let slideLength = $('.case-study-slide-container .swiper-slide').length-1;
+                      let slideHeight = window.innerHeight;
+        
+                      let slideTotalHeight = -(slideHeight*slideLength);
+                      let slideMaxHeight = slider.getTranslate();
+        
+                      if(slideTotalHeight>=slideMaxHeight+5){
+                        TweenLite.to(slideWrapper,1,{force3D:true,y: slideTotalHeight})
                       }
-          
-                      if($wwCh<=415){
-          
-          
-                        if(transEndSlider.getTranslate()<=(-300)){
-                            TweenLite.to('#logo__holder_loaded',1,{
-                              top: 0,
-                              left: 2.5,
-                              width: '50px',
-                              height: '65px',
-                              ease: Expo.easeInOut, 
-                            });
-                        }else{
-                          TweenLite.to('#logo__holder_loaded',1,{
-                            top: 32,
-                                left: 80,
-                                width: '103px',
-                                height: '115px',
-                                ease: Expo.easeInOut, 
-                          });
-                          
-                        }
-                      }
-          
-          
+        
                     }
+                }
+              });
+
+              }else{
+                var caseStudy = new Swiper('.case-study-slide-container', {
+                  direction: 'horizontal',
+                  slidesPerView: 'auto',
+                  mousewheel: true,
+                  freeMode: true,
+                  infinite: true,
+                  mousewheelSensitivity: 0.02,
+                  freeModeFluid: true,
+                  freeModeMomentumVelocityRatio: 0.5,
+                  pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                  },
+                  on:{
+                    slideChangeTransitionEnd: function (){
+                        let transEndSlider = this;
+            
+                        let $wwCh = window.innerWidth;
+            
+  
+                        if($wwCh>=768){
+                          console.log(transEndSlider.getTranslate());
+                          if(transEndSlider.getTranslate()<=(-300)){
+                              TweenLite.to('#logo__holder_loaded',1,{
+                                top: 0,
+                                left: 2.5,
+                                width: '50px',
+                                height: '65px',
+                                ease: Expo.easeInOut, 
+                              });
+                          }else{
+                            TweenLite.to('#logo__holder_loaded',1,{
+                              top: 32,
+                                  left: 80,
+                                  width: '103px',
+                                  height: '115px',
+                                  ease: Expo.easeInOut, 
+                            });
+                            
+                          }
+                        }
+            
+                        if($wwCh<=415){
+            
+            
+                          if(transEndSlider.getTranslate()<=(-300)){
+                              TweenLite.to('#logo__holder_loaded',1,{
+                                top: 0,
+                                left: 2.5,
+                                width: '50px',
+                                height: '65px',
+                                ease: Expo.easeInOut, 
+                              });
+                          }else{
+                            TweenLite.to('#logo__holder_loaded',1,{
+                              top: 32,
+                                  left: 80,
+                                  width: '103px',
+                                  height: '115px',
+                                  ease: Expo.easeInOut, 
+                            });
+                            
+                          }
+                        }
+            
+            
+                      }
+                }
+              });
               }
-            });
             
-            var $content = new TimelineMax({delay: 0.5});
             
-                    // ABOUT ANIMATION STARTS
-            var $content__header = $('.content__header');
-            var $content__subheader = $('.content__subheader');
-            var $content__description = $('.content__description div');
-        
-        
-            var $content__headerST = new SplitText([$content__header], {type:"words"});
-            var $content__subheaderST = new SplitText([$content__subheader], {type:"words"});
-            var $content__descriptionST = new SplitText([$content__description], {type:"words"});
-        
-            $content__headerST.split({type:"chars, words"})
-            $content__subheaderST.split({type:"chars, words"})
-            $content__descriptionST.split({type:"chars, words,lines"})
-        
-            $content.staggerFromTo($content__headerST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03)
-            $content.staggerFromTo($content__subheaderST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03,'-=1')
-            $content.staggerFromTo($content__descriptionST.words, 0.5, {y:50, autoAlpha:0},{y:0, autoAlpha:1,ease: Expo.easeInOut}, 0.01,'-=1')
+         
              
           },
           onLeave: function() {

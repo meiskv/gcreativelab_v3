@@ -106,8 +106,21 @@ get_header(); ?>
                                                 
                                                 <div class="case__holder">
                                                         <!-- CASE STARTS ENDS -->
-                                                        <div class="case__left">
+                                                        
+                                                        <!-- CASE LEFT ENDS -->
 
+                                                        <!-- /////////////// -->
+
+                                                        <!-- CASE STARTS ENDS -->
+                                                        <div class="case__right" style="background: url(<?php echo get_field('work_cover')['url']; ?>) no-repeat center center;
+                                                                background-size: cover;
+                                                                -webkit-background-size: cover;
+                                                                -moz-background-size: cover; 
+                                                                -o-background-size: cover;">
+                                                            <!-- <img src="<?php echo get_field('home_slide_cover')['url']; ?>" alt=""> -->
+                                                        </div>
+                                                        <div class="case__left">
+                                                                
                                                             <div class="case__title">
                                                                 <h1><?php echo the_title(); ?></h1>
                                                             </div>
@@ -121,18 +134,6 @@ get_header(); ?>
                                                                 <a href="<?php echo get_permalink(); ?>">HOW WE DID IT</a>
                                                             </div>
 
-                                                        </div>
-                                                        <!-- CASE LEFT ENDS -->
-
-                                                        <!-- /////////////// -->
-
-                                                        <!-- CASE STARTS ENDS -->
-                                                        <div class="case__right" style="background: url(<?php echo get_field('work_cover')['url']; ?>) no-repeat center center;
-                                                                background-size: cover;
-                                                                -webkit-background-size: cover;
-                                                                -moz-background-size: cover; 
-                                                                -o-background-size: cover;">
-                                                            <!-- <img src="<?php echo get_field('home_slide_cover')['url']; ?>" alt=""> -->
                                                         </div>
                                                         <!-- CASE LEFT ENDS -->
                                                 </div>

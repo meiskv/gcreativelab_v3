@@ -152,6 +152,17 @@
         text-align: center;
         justify-content: flex-start;
         position: relative;
+        @include breakpoint(small down) {
+            max-width: 100%;
+            align-items: flex-end;
+        }
+
+        .services_border_1{
+            border-right: 1px solid #d5d5d5;
+            @include breakpoint(small down) {
+                border-right: 0px solid #d5d5d5;
+            }
+        }
 
         .services__holder{
             position: relative;
@@ -163,9 +174,13 @@
             flex-direction: column;
             justify-content: flex-start;
             @include breakpoint(small down) {
-                padding: 0 3rem;
+                // padding: 0 3rem;
+                width: 70%;
                 height: auto;
                 margin: 0rem 0;
+                padding: 0 0rem;
+                border-left: 0px solid #d5d5d5;
+                margin-right: 2rem;
             }
             .center-srvc{
                 position: relative;
@@ -193,7 +208,8 @@
                 margin: 1.5rem 0;
                 text-align: left;
                 @include breakpoint(small down) {
-                    font: 0.9rem/150% "futura-pt", AppleGothic, sans-serif;
+                    font: 1rem/150% "futura-pt", AppleGothic, sans-serif;
+                    color: #757475;
                 }
                 
             }
@@ -205,6 +221,13 @@
         
     }
 
+    .page__pagination{
+        @include breakpoint(small down) {
+            justify-content: flex-end;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
     
     .full__mountain{
         // border-left: 1px solid #d5d5d5;

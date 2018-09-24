@@ -115,7 +115,7 @@ get_header(); ?>
 											  </div>
 
 											  <div class="swiper-slide swiper__slide__services">
-													<div class="services__holder"  style="border-right: 1px solid #d5d5d5;">
+													<div class="services__holder services_border_1">
 															<div class="center-srvc">
 													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/social-media.svg" height="125" width="125" alt="">
 													<h4>Social Media</h4>

@@ -39,6 +39,9 @@
         align-items: center;
         width: 20vw;
         height:100vh;
+        @include breakpoint(small down) {
+            justify-content: flex-end;
+        }
     }
     .main-slide{
         width: 50vw;
@@ -51,7 +54,7 @@
     .case-slide{
         width: 100vw;
         @include breakpoint(small down) {
-            width: 90vw;
+            width: 100%;
         }
     }
 
@@ -138,6 +141,7 @@
         @include breakpoint(small down) {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
+            width: 90vw;
           
         }
 
@@ -475,6 +479,11 @@
     -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
     -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
     box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
+    @include breakpoint(small down) {
+        -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0);
+        -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0);
+        box-shadow: 0px 0px 35px -1px rgba(0,0,0,0);
+    }
 }
 
 .address-case{
