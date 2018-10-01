@@ -78,7 +78,7 @@ get_header(); ?>
 									
 								</div>
 								<div class="swiper-slide about__whole_map">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-map.svg" style="height:100%;" width="100%" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-map.svg" style="height:95%;" width="100%" alt="">
 								</div>
 								<!-- <div class="swiper-slide about__slide__fifty__left">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-connected-icon.svg" height="95" width="95" alt="">
