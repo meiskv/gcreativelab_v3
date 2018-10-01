@@ -104,7 +104,7 @@ get_header(); ?>
 										<?php get_template_part( 'parts/svg', 'exactmap' ); ?>								
 								</div>
 
-								<div class="swiper-slide page__pagination">
+								<!-- <div class="swiper-slide page__pagination">
 										<div class="page__pagination">
 											<a href="http://www.gcreativelab.com/services/" class="btn__top btn__pagination__services">
 												
@@ -123,7 +123,7 @@ get_header(); ?>
 												</div>
 											</a>
 										</div>
-								</div>
+								</div> -->
 
 								<!-- Inner Slide End -->
 							</div>

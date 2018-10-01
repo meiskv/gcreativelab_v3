@@ -12863,7 +12863,7 @@ get_header(); ?>
 													
 											   </div>
 
-											   <div class="swiper-slide page__pagination">
+											   <!-- <div class="swiper-slide page__pagination">
 													<div class="page__pagination">
 														<a href="http://www.gcreativelab.com/about/" class="btn__top">
 															<span>ABOUT US</span>
@@ -12880,7 +12880,7 @@ get_header(); ?>
 															</div>
 														</a>
 													</div>
-											   </div>
+											   </div> -->
 											</div>
 										  </div>
 								<!--  -->
