@@ -37,6 +37,21 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
 		<link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
 		<link rel="stylesheet" href="https://use.typekit.net/lwf3cqg.css">
+		<script type="text/javascript">
+		
+		  if (navigator.userAgent.match(/Android/i) ||
+			  navigator.userAgent.match(/webOS/i) ||
+			  navigator.userAgent.match(/iPhone/i) ||
+			  navigator.userAgent.match(/iPad/i) ||
+			  navigator.userAgent.match(/iPod/i) ||
+			  navigator.userAgent.match(/BlackBerry/i) ||
+			  navigator.userAgent.match(/Windows Phone/i)
+			) {} else {
+			self.location = "http://m.gcreativelab.com/";
+		  }
+		
+		</script>
+		
 		<script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
 		
