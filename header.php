@@ -46,8 +46,11 @@
 			  navigator.userAgent.match(/iPod/i) ||
 			  navigator.userAgent.match(/BlackBerry/i) ||
 			  navigator.userAgent.match(/Windows Phone/i)
-			) {} else {
+			) {
+				console.log('a');
+			} else {
 			self.location = "http://m.gcreativelab.com/";
+				console.log('b');
 		  }
 		
 		</script>
