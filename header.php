@@ -48,8 +48,9 @@
 			  navigator.userAgent.match(/Windows Phone/i)
 			) {
 				console.log('a');
+				self.location = "http://m.gcreativelab.com/";
 			} else {
-			self.location = "http://m.gcreativelab.com/";
+				self.location = "http://gcreativelab.com/";
 				console.log('b');
 		  }
 		
