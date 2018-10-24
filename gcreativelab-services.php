@@ -120,7 +120,7 @@ get_header(); ?>
 													<div class="services__holder services_border_1">
 															<div class="center-srvc">
 													<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/social-media.svg" height="70" width="70" alt=""> -->
-													<div id="social-media-icon" style="max-width: 80px; max-height: 80px;"></div>
+													<div id="social-media-icon" style="max-width: 100px; max-height: 100px;"></div>
 													<h4>Social Media</h4>
 													<p>Social media has turned into a necessity in the new digital age. Today, it’s all about conversations, community, connecting with the audience and building relationships with the brand. It’s no longer just a broadcast channel or a sales and marketing tool. It’s a platform that allows us to hear what people say and respond accordingly. With that in mind, we develop strategies, launch media buying campaigns and create content that engages people and lets them interact with the brand.</p>
 												   </div>
