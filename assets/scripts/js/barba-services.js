@@ -299,6 +299,62 @@
                 $content.staggerFromTo($content__subheaderST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03,'-=1')
                 $content.staggerFromTo($content__descriptionST.words, 0.5, {y:50, autoAlpha:0},{y:0, autoAlpha:1,ease: Expo.easeInOut}, 0.01,'-=1')
 
+                var stratIcon = {
+                  container: document.getElementById('strat-icon'),
+                  renderer: 'svg',
+                  loop: true,
+                  // yoyo: true,
+                  autoplay: true,
+                  path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v3/assets/images/bodymovin/strategy.json'
+                };
+                var strategyIcon;
+                strategyIcon = bodymovin.loadAnimation(stratIcon);
+
+                var designIcon = {
+                  container: document.getElementById('design-icon'),
+                  renderer: 'svg',
+                  loop: true,
+                  // yoyo: true,
+                  autoplay: true,
+                  path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v3/assets/images/bodymovin/design.json'
+                };
+                var designsIcon;
+                designsIcon = bodymovin.loadAnimation(designIcon);
+
+                var commIcon = {
+                  container: document.getElementById('comm-icon'),
+                  renderer: 'svg',
+                  loop: true,
+                  // yoyo: true,
+                  autoplay: true,
+                  path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v3/assets/images/bodymovin/communications.json'
+                };
+                var communicationIcon;
+                communicationIcon = bodymovin.loadAnimation(commIcon);
+
+                var prodIcon = {
+                  container: document.getElementById('prod-icon'),
+                  renderer: 'svg',
+                  loop: true,
+                  // yoyo: true,
+                  autoplay: true,
+                  path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v3/assets/images/bodymovin/production.json'
+                };
+                var productionIcon;
+                productionIcon = bodymovin.loadAnimation(prodIcon);
+
+                var socialIcon = {
+                  container: document.getElementById('social-media-icon'),
+                  renderer: 'svg',
+                  loop: true,
+                  // yoyo: true,
+                  autoplay: true,
+                  // path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/design.json'
+                  path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v3/assets/images/bodymovin/social_media.json'
+                };
+                var socialMediaIcon;
+                socialMediaIcon = bodymovin.loadAnimation(socialIcon);
+
                 
           },
           onLeave: function() {
