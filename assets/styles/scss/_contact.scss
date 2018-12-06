@@ -72,14 +72,16 @@
         textarea{
             border: 2px solid #F4F4F4 !important;
         }
-        button{
-            border: 2px solid #F4F4F4 !important;
-            background: #fff;
-            color: #0F294B;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-radius: 50px;
-            padding: 0.8rem 3rem;
-        }
+        
+    }
+
+    .wpforms-submit{
+        border: 2px solid #F4F4F4 !important;
+        background: #fff !important;
+        color: #0F294B;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 50px;
+        padding: 0.8rem 3rem !important;
     }
 }
