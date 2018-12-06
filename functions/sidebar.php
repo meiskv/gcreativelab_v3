@@ -21,6 +21,16 @@ function joints_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
+	register_sidebar(array(
+		'id' => 'contactform',
+		'name' => __('Contact Page Form', 'jointswp'),
+	));
+
+	register_sidebar(array(
+		'id' => 'instagramdesktop',
+		'name' => __('Contact Page Form', 'jointswp'),
+	));
+
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call
