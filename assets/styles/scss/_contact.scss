@@ -31,6 +31,9 @@
     margin: 0.5rem 0;
 }
 
+.swiper-contact-slide 
+
+
 .contact-page{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -56,21 +59,21 @@
         width: 50vw;
     }
 
-    #text-3{
+    .wpforms-field-container{
         width:100%;
         label{
             color: #0F294B;
         }
         input{
             width: 100%;
-            max-width: 100%;
-            border: 2px solid #F4F4F4;
+            max-width: 100% !important;
+            border: 2px solid #F4F4F4 !important;
         }
         textarea{
-            border: 2px solid #F4F4F4;
+            border: 2px solid #F4F4F4 !important;
         }
         button{
-            border: 2px solid #F4F4F4;
+            border: 2px solid #F4F4F4 !important;
             background: #fff;
             color: #0F294B;
             font-weight: bold;
