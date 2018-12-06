@@ -115,7 +115,6 @@ onEnterCompleted: function() {
     .to(".hello-translate", 1.5, {text:"여보세요",ease:Expo.easeInOut})
     .to(".hello-translate", 1.5, {text:"Hola",ease:Expo.easeInOut})
     .to(".hello-translate", 1.5, {text:"こんにちは",ease:Expo.easeInOut})
-    .to(".hello-translate", 1.5, {text:"Ciao",ease:Expo.easeInOut})
     .to(".hello-translate", 1.5, {text:"你好",ease:Expo.easeInOut})
     .to(".hello-translate", 1.5, {text:"Hello",ease:Expo.easeInOut});
 
