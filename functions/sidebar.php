@@ -28,7 +28,7 @@ function joints_register_sidebars() {
 
 	register_sidebar(array(
 		'id' => 'instagramdesktop',
-		'name' => __('Instagram', 'jointswp'),
+		'name' => __('Instagram Desktop', 'jointswp'),
 	));
 
 	/*

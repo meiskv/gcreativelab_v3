@@ -48,12 +48,12 @@ get_header(); ?>
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
 								<!-- Slides -->
-								<div class="swiper-slide main-slide">
+								<!-- <div class="swiper-slide main-slide">
 									<div class="about-wrapper">
-										<div class="left"> <!--  Left Starts -->
+										<div class="left"> 
 											<div class="content__holder about__holder">
-												<div class="content__header">We are</div>
-												<div class="content__subheader">CONNECTED</div>
+												<div class="content__header">Lorem Isum</div>
+												<div class="content__subheader">LOREM IPSUM DOLOR IT</div>
 												<div class="content__description">
 													
 													<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -62,24 +62,14 @@ get_header(); ?>
 														
 													<?php endwhile; endif; ?>	
 												</div>
-												<!-- <div class="content__btn">
-													<a href="http://www.gcreativelab.com/services/">OUR SERVICES</a>
-												</div> -->
-												
 											</div>
-											<!-- <div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div>
-											<div class="explore about-explore">KNOW MORE ABOUT GRAYLING
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/explore_arrow.svg" width="10" height="9" alt="">
-											  </div> -->
 											<div class="content__hero movin__g">G</div>
-										</div> <!--  Left Ends -->
-										
+										</div> 
 									</div>
-									
-								</div>
+								</div> -->
 								
-								<div class="swiper-slide slide-about">
-										<?php dynamic_sidebar('instagramdesktop'); ?>
+								<div class="swiper-slide slide-about slide-social">
+                                        <?php dynamic_sidebar('instagramdesktop'); ?>
 								</div>
 
 								<!-- Inner Slide End -->
