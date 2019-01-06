@@ -139,9 +139,7 @@ get_header(); ?>
 													.para-left{
 														left: -340px !important;
 													}
-											  	/* .para-img{
-													  max-height: 50vh;
-												  } */
+											  	
 											  </style>
 											  
 											   <div class="swiper-slide full__mountain">
