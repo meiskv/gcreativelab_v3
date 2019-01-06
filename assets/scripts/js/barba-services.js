@@ -13,8 +13,13 @@
               var svgLoadedHolderLoaded = "<div id='logo__holder_loaded'></div>";
     
               var servicesHeight = $('.services__container .swiper-slide');
+              var paraHeight = $('.para-img img');
+              var paraCopyHeight = $('.para-copy-svg');
+
               let $wwCh = window.innerHeight;
               TweenMax.set(servicesHeight,{height: $wwCh});
+              TweenMax.set(paraHeight,{height: $wwCh});
+              TweenMax.set(paraCopyHeight,{height: $wwCh});
 
               var menuHeight = $('.menu');
               TweenMax.set(menuHeight,{height: $wwCh});
@@ -47,6 +52,16 @@
                   animLogoLoaded = bodymovin.loadAnimation(logoLoaded);
                 }    
               }
+
+              var scene = document.getElementById('scene');
+              var parallaxInstance = new Parallax(scene, {
+              relativeInput: true,
+              originY: 0,
+              frictionY: 0.0523,
+              frictionX: 0.0375
+              });
+
+
           },
           onEnterCompleted: function() {
               // The Transition has just finished.
