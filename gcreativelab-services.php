@@ -137,7 +137,7 @@ get_header(); ?>
 														top: 20px !important;
 													}
 													.para-left{
-														left: -340px; !important;
+														left: -340px !important;
 													}
 											  	/* .para-img{
 													  max-height: 50vh;
