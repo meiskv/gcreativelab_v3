@@ -10,3 +10,28 @@
         }
     }
 }
+
+
+#scene{
+    height: 95vh;
+}
+.para-top{
+    top: 20px !important;
+}
+.para-left{
+    @include breakpoint(nine only) {
+        left: -360px !important;
+    }
+    @include breakpoint(two only) {
+        left: 200px !important;
+    }
+    @include breakpoint(six only) {
+        left: -430px !important;
+    }
+    @include breakpoint(four only) {
+        left: -820px !important;
+    }
+    @include breakpoint(large only) {
+        left: -850px !important;
+    }
+}

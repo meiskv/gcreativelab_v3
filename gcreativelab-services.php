@@ -129,18 +129,6 @@ get_header(); ?>
 											  
 											  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-											  <style>
-													#scene{
-														height: 95vh;
-													}
-													.para-top{
-														top: 20px !important;
-													}
-													.para-left{
-														left: -340px !important;
-													}
-											  	
-											  </style>
 											  
 											   <div class="swiper-slide full__mountain">
 												<div id="scene">
