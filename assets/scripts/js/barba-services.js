@@ -58,7 +58,7 @@
               relativeInput: true,
               originY: 0,
               frictionY: 0.0523,
-              frictionX: 0.0375
+              frictionX: 0.2375
               });
 
 

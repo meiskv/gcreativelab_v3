@@ -19,19 +19,19 @@
     top: 20px !important;
 }
 .para-left{
-    @include breakpoint(nine only) {
+    @include breakpoint(nine down) {
         left: -360px !important;
     }
-    @include breakpoint(two only) {
+    @include breakpoint(two down) {
         left: 200px !important;
     }
-    @include breakpoint(six only) {
+    @include breakpoint(six down) {
         left: -430px !important;
     }
-    @include breakpoint(four only) {
+    @include breakpoint(four down) {
         left: -820px !important;
     }
-    @include breakpoint(large only) {
+    @include breakpoint(large down) {
         left: -850px !important;
     }
 }
