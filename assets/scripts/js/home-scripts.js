@@ -518,14 +518,14 @@ window.requestAnimationFrame(function() {
 
         var gpreload = new TimelineMax({repeat: -1, delay: 1});
         
-        gpreload.to(".header_animation", 0.6, {text:"DIFFERENT",ease:Expo.easeInOut,delay: 0.3})
-        .to(".header_animation", 0.6, {text:"ENTHUSIASTIC",ease:Expo.easeInOut})
-        .to(".header_animation", 0.6, {text:"PASSIONATE",ease:Expo.easeInOut})
-        .to(".header_animation", 0.6, {text:"CONNECTED",ease:Expo.easeInOut})
-        .to(".header_animation", 0.6, {text:"VERSATILE",ease:Expo.easeInOut})
-        .to(".header_animation", 0.6, {text:"EXPRESSIVE",ease:Expo.easeInOut})
-        .to(".header_animation", 0.6, {text:"INNOVATIVE",ease:Expo.easeInOut})
-        .to(".header_animation", 0.6, {text:"BOLD",ease:Expo.easeInOut});
+        gpreload.to(".header_animation", 0.8, {text:"DIFFERENT",ease:Expo.easeInOut,delay: 0.4})
+        .to(".header_animation", 0.8, {text:"ENTHUSIASTIC",ease:Expo.easeInOut})
+        .to(".header_animation", 0.8, {text:"PASSIONATE",ease:Expo.easeInOut})
+        .to(".header_animation", 0.8, {text:"CONNECTED",ease:Expo.easeInOut})
+        .to(".header_animation", 0.8, {text:"VERSATILE",ease:Expo.easeInOut})
+        .to(".header_animation", 0.8, {text:"EXPRESSIVE",ease:Expo.easeInOut})
+        .to(".header_animation", 0.8, {text:"INNOVATIVE",ease:Expo.easeInOut})
+        .to(".header_animation", 0.8, {text:"BOLD",ease:Expo.easeInOut});
 
 
       }, // Home onComplete Barba Ends
