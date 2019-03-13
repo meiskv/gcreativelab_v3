@@ -76,7 +76,7 @@ onEnter: function() {
         
         var map = new mapboxgl.Map({
             container: 'contact__map',
-            style: 'mapbox://styles/miksv/cjj8jcyip2mx82spg7g61qg63',
+            style: 'mapbox://styles/miksv/cjt6x2gar3hnr1fp8bts3oo3c',
             // center: [55.155498, 25.097279],
             // zoom: 17.00,
             bearing: -37.49,
