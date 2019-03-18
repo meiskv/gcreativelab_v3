@@ -11,7 +11,7 @@ get_header(); ?>
 	
 		    <main id="main-container" class="main small-12 medium-12 large-12 cell" role="main">
 			<div id="barba-wrapper">
-					<div class="barba-container" data-namespace="aboutpage">
+					<div class="barba-container" data-namespace="socialpage">
 				<!-- Swiper -->
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -44,7 +44,7 @@ get_header(); ?>
 								<!--  -->
 
 								<!-- Slider main container -->
-						<div class="about-container">
+						<div class="social-container">
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
 								<!-- Slides -->
@@ -69,7 +69,7 @@ get_header(); ?>
 								</div> -->
 								
 								<div class="swiper-slide slide-about slide-social">
-                                        <?php dynamic_sidebar('instagramdesktop'); ?>
+										<?php dynamic_sidebar('instagramdesktop'); ?>
 								</div>
 
 								<!-- Inner Slide End -->

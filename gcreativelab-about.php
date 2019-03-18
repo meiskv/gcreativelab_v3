@@ -77,6 +77,20 @@ get_header(); ?>
 									</div>
 									
 								</div>
+								<div class="swiper-slide slide-about">
+
+										<?php get_template_part( 'parts/svg', 'exactmap' ); ?>								
+								</div>
+
+								<div class="swiper-slide about__slide__fifty__left_1">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-reputation-icon.svg" height="95" width="95" alt="">
+									<div class="home__content__header_home">We build</div>
+									<div class="about__content__subheader">BRANDS</div>
+									<div class="about__content__description">
+											We are a part of Grayling, a wholly owned subsidiary of Huntsworth PLC – a public relations focused group listed on the London Stock Exchange. We provide truly integrated strategic services combined with worldwide reach. We match this with local expertise and knowledge supported by diverse sector experience.	
+									</div>
+								</div>
+
 								<div class="swiper-slide about__whole_map">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-map.svg" style="height:95%;" width="100%" alt="">
 								</div>
@@ -91,18 +105,8 @@ get_header(); ?>
 								<!-- <div class="swiper-slide about__slide__fifty about__huntsworth">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-huntsworth.svg" style="height:100%;" width="100%" alt="">
 								</div> -->
-								<div class="swiper-slide about__slide__fifty__left_1">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-reputation-icon.svg" height="95" width="95" alt="">
-										<div class="home__content__header_home">We build</div>
-										<div class="about__content__subheader">BRANDS</div>
-										<div class="about__content__description">
-												We are a part of Grayling, a wholly owned subsidiary of Huntsworth PLC – a public relations focused group listed on the London Stock Exchange. We provide truly integrated strategic services combined with worldwide reach. We match this with local expertise and knowledge supported by diverse sector experience.	
-										</div>
-								</div>
-								<div class="swiper-slide slide-about">
-
-										<?php get_template_part( 'parts/svg', 'exactmap' ); ?>								
-								</div>
+								
+								
 
 								<!-- <div class="swiper-slide page__pagination">
 										<div class="page__pagination">
