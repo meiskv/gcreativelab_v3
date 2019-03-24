@@ -129,7 +129,7 @@ window.requestAnimationFrame(function() {
                   
                   
                   if (slider.activeIndex === 0) {
-                    slider.slideNext();
+                    // slider.slideNext();
                   } else {
                     slider.slidePrev();
                   }
