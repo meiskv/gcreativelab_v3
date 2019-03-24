@@ -531,7 +531,7 @@ window.requestAnimationFrame(function() {
       }, // Home onComplete Barba Ends
       onLeave: function() {
           // A new Transition toward a new page has just started.
-          
+          instaStat = false;
       },
       onLeaveCompleted: function() {
           // The Container has just been removed from the DOM.
@@ -570,7 +570,6 @@ window.requestAnimationFrame(function() {
     
 
     Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
-
 
 
     });

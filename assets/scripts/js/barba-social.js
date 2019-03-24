@@ -1,5 +1,4 @@
-(function( $ ) {
-    
+(function( $ ) {  
     // wait until window is loaded - all images, styles-sheets, fonts, links, and other media assets
     // import { TimelineMax } from "gsap";
     // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
@@ -74,6 +73,14 @@ onEnter: function() {
 },
 onEnterCompleted: function() {
     // The Transition has just finished.
+
+    if(instaStat==false){
+      location.reload();
+      instaStat = true;
+    }
+
+    console.log(instaStat);
+
     var menuButton = document.querySelector('.menu-button');
     var swiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
@@ -324,10 +331,12 @@ onEnterCompleted: function() {
 onLeave: function() {
     // A new Transition toward a new page has just started.
 
-    
+    instaStat = true;
 },
 onLeaveCompleted: function() {
     // The Container has just been removed from the DOM.
+    instaStat = true;
+    
 }
 });
 
