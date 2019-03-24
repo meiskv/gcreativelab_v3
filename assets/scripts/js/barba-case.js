@@ -275,6 +275,7 @@
           },
           onLeave: function() {
               // A new Transition toward a new page has just started.
+              instaStat = false;
           },
           onLeaveCompleted: function() {
               // The Container has just been removed from the DOM.
