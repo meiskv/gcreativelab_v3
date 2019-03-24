@@ -49,6 +49,35 @@
           },
           onEnterCompleted: function() {
               // The Transition has just finished.
+
+              var values = MorphSVGPlugin.pathDataToBezier("#circlePath");
+              
+              TweenMax.set('circle', {
+                x:                    values[0].x,
+                y:                    values[0].y,
+                xPercent:             -50,
+                yPercent:             -50,
+                transformOrigin:  "50% 50%"
+              });
+          
+              TweenMax.to('#Ellipse_3', 1, {bezier: {values:values, type:"cubic"}, ease:Linear.easeNone, repeat:-1, paused:false});
+              TweenMax.to('#Ellipse_4', 1, {bezier: {values:values, type:"cubic"}, ease:Linear.easeNone, repeat:-1, paused:false});
+              TweenMax.fromTo("#Group_11306", 0.5, {
+                x:"+=7"
+              }, {
+                x:"-=7",
+                yoyo:true,
+                repeat:-1
+              });
+          
+              var indicatorText = new TimelineMax({repeat: -1, delay: 1});
+              
+              indicatorText.to(".indicatorText", 1, 
+              {text:{value:"DRAG", delimiter:" "},ease:Expo.easeInOut})
+                .to(".indicatorText", 1, 
+              {text:{value:"SCROLL", delimiter:" "},ease:Expo.easeInOut,delay: 0.4});
+
+
               var menuButton = document.querySelector('.menu-button');
               var swiper = new Swiper('.case-container', {
                 slidesPerView: 'auto',

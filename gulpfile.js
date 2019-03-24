@@ -30,6 +30,7 @@ const SOURCE = {
 		'node_modules/bodymovin/build//player/bodymovin.js',
 		'node_modules/gsap/src/uncompressed/plugins/TextPlugin.js',
 		'node_modules/gsap/src/uncompressed/bonus/SplitText.js',
+		'node_modules/gsap/src/uncompressed/bonus/MorphSVGPlugin.js',
 		'node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js',
 		'node_modules/lodash/lodash.min.js',
 		

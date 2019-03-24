@@ -75,7 +75,25 @@ get_header(); ?>
 										</div> <!--  Left Ends -->
 										
 									</div>
-									
+									<div class="scroll-indicator">
+										<span class="indicatorText">Scroll</span>&nbsp;to Navigate <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="34.315" height="31.929" viewBox="0 0 34.315 31.929">
+											<g id="Group_11307" data-name="Group 11307" transform="translate(1623.014 258)">
+											  <path id="circlePath" data-name="Path 10680" d="M15.976.5A15.62,15.62,0,0,1,30.5,10.631,15.481,15.481,0,0,1,8.014,29.25,15.627,15.627,0,0,1,.794,12.957,15.623,15.623,0,0,1,15.976.5Z" transform="translate(-1623.006 -258)" fill="none" stroke="#0f294b" stroke-width="1"/>
+											  <circle id="whitebg" cx="15.063" cy="15.063" r="15.063" transform="translate(-1622.094 -257.046)" fill="#fff"/>
+											  <g id="smallcircle" class="circleSmall" transform="translate(-1623.006 -258)">
+												<circle id="Ellipse_3" data-name="Ellipse 3" cx="2.5" cy="2.5" r="2.5" transform="translate(29.307 13.954)" fill="#d81c5c"/>
+												<circle id="Ellipse_4" data-name="Ellipse 4" cx="2" cy="2" r="2" transform="translate(29.807 14.454)" fill="none" stroke="#fff" stroke-width="1"/>
+											  </g>
+											  <g id="Group_11306" data-name="Group 11306" transform="translate(-1623.006 -258)">
+												<path id="Play" d="M19.91,13.731l2.761,1.631,1.9,1.123-4.663,2.549Z" fill="#d81c5c"/>
+												<line id="Line_10" data-name="Line 10" x1="12" transform="translate(8.807 16.454)" fill="none" stroke="#d81c5c" stroke-width="1"/>
+											  </g>
+											</g>
+										  </svg>
+										  
+										  
+										  
+										</div>
 								</div>
 								<div class="swiper-slide slide-about">
 
