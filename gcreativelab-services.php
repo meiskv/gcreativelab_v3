@@ -162,6 +162,7 @@ get_header(); ?>
 														<div class="para-img" data-depth="0.20"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/10.png" alt=""></div>
 														<div class="para-img para-top" data-depth="0"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/11.png" alt=""></div>
 														<div class="para-img para-top" data-depth="0"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/text.png" alt=""></div>
+														<!-- POGI AKO -->
 														<div class="para-img para-left" data-depth="0">
 															<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain/12.png" alt=""> -->
 															
