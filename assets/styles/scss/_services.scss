@@ -236,6 +236,16 @@
   
 }
 
+#scene{
+    position: relative;
+    .mountain-bg{
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+}
+
 // communications
 // design
 // production
