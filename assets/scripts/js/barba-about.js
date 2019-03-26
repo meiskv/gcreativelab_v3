@@ -80,7 +80,7 @@ onEnterCompleted: function() {
       loop: true,
       // yoyo: true,
       autoplay: true,
-      path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/indicator.json'
+      path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/indicator.json'
     };
     
     var indicatorLoaded;
