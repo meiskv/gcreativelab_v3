@@ -66,26 +66,17 @@
           onEnterCompleted: function() {
               // The Transition has just finished.
 
-
-              var values = MorphSVGPlugin.pathDataToBezier("#circlePath");
+              var loadIndicator = {
+                container: document.getElementById('indicator_loader'),
+                renderer: 'svg',
+                loop: true,
+                // yoyo: true,
+                autoplay: true,
+                path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/indicator.json'
+              };
               
-              TweenMax.set('circle', {
-                x:                    values[0].x,
-                y:                    values[0].y,
-                xPercent:             -50,
-                yPercent:             -50,
-                transformOrigin:  "50% 50%"
-              });
-          
-              TweenMax.to('#Ellipse_3', 1, {bezier: {values:values, type:"cubic"}, ease:Linear.easeNone, repeat:-1, paused:false});
-              TweenMax.to('#Ellipse_4', 1, {bezier: {values:values, type:"cubic"}, ease:Linear.easeNone, repeat:-1, paused:false});
-              TweenMax.fromTo("#Group_11306", 0.5, {
-                x:"+=7"
-              }, {
-                x:"-=7",
-                yoyo:true,
-                repeat:-1
-              });
+              var indicatorLoaded;
+              indicatorLoaded = bodymovin.loadAnimation(loadIndicator);
           
               var indicatorText = new TimelineMax({repeat: -1, delay: 1});
               
