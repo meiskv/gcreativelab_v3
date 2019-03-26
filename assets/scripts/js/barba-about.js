@@ -14,6 +14,18 @@ namespace: 'aboutpage',
 onEnter: function() {
     // The new Container is ready and attached to the DOM.
 
+    var loadIndicator = {
+      container: document.getElementById('indicator_loader'),
+      renderer: 'svg',
+      loop: true,
+      // yoyo: true,
+      autoplay: true,
+      path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/indicator.json'
+    };
+    
+    var indicatorLoaded;
+    indicatorLoaded = bodymovin.loadAnimation(loadIndicator);
+
     var aboutHeight = $('.about-container .swiper-slide');
     let $wwCh = window.innerHeight;
     TweenMax.set(aboutHeight,{height: $wwCh});
@@ -73,18 +85,6 @@ onEnter: function() {
 },
 onEnterCompleted: function() {
     // The Transition has just finished.
-
-    var loadIndicator = {
-      container: document.getElementById('indicator_loader'),
-      renderer: 'svg',
-      loop: true,
-      // yoyo: true,
-      autoplay: true,
-      path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/indicator.json'
-    };
-    
-    var indicatorLoaded;
-    indicatorLoaded = bodymovin.loadAnimation(loadIndicator);
 
     var indicatorText = new TimelineMax({repeat: -1, delay: 1});
     
