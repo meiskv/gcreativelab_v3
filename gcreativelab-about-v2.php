@@ -123,7 +123,7 @@ get_header(); ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about_v2/presence.svg" height="70%" width="80%" style="height: 100%; padding: 0;" alt="">
                                 </div>
                                 
-                                <div class="swiper-slide page__pagination">
+                                <!-- <div class="swiper-slide page__pagination">
 										<div class="page__pagination">
 											<a href="http://www.gcreativelab.com/services/" class="btn__top btn__pagination__services">
 												
@@ -142,7 +142,7 @@ get_header(); ?>
 												</div>
 											</a>
 										</div>
-								</div>
+								</div> -->
 
 								<!-- Inner Slide End -->
 							</div>
