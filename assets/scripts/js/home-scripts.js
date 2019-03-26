@@ -106,7 +106,7 @@ window.requestAnimationFrame(function() {
             loop: true,
             // yoyo: true,
             autoplay: true,
-            path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/indicator.json'
+            path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v3/assets/images/bodymovin/indicator.json'
           };
           
           var indicatorLoaded;
