@@ -164,7 +164,7 @@ get_header(); ?>
 															</div>
 														</a>
 														<a href="/" class="btn__btm">
-																<span>WE ARE...</span>
+																<span>OUR WORK...</span>
 															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
 															<div class="bg__arrow">
 																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-04.svg" height="316" width="316" alt="">
