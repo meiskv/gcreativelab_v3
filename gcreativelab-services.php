@@ -130,42 +130,36 @@ get_header(); ?>
 												   </div>
 											  </div>
 											  
-											  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+											  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+											  
 
 											  
 											   <div class="swiper-slide full__mountain">
 												<div id="scene">
-														<!-- <div class="para-img" data-depth="1.1"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain/01.png" alt=""></div>
-														<div class="para-img" data-depth="1"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain/02.png" alt=""></div> -->
-														<div class="para-img mountain-bg" data-depth="0.5"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/03.png" alt=""></div>
-														<div class="para-img" data-depth="0.45"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/05.png" alt=""></div>
-														<div class="para-img" data-depth="0.40"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/06.png" alt=""></div>
-														<div class="para-img" data-depth="0.35"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/07.png" alt=""></div>
-														<div class="para-img" data-depth="0.30"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/08.png" alt=""></div>
-														<div class="para-img" data-depth="0.25"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/09.png" alt=""></div>
-														<div class="para-img" data-depth="0.20"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/10.png" alt=""></div>
-														<div class="para-img para-top" data-depth="0"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/11.png" alt=""></div>
-														<div class="para-img para-top" data-depth="0"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/text.png" alt=""></div>
-														<!-- POGI AKO -->
-														<div class="para-img para-left" data-depth="0">
-															<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain/12.png" alt=""> -->
-															
-														</div>
+														<div class="para-img mountain-bg para-1" data-depth="0.35"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/03.png" alt=""></div>
+														<div class="para-img para-2" data-depth="0.45"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/05.png" alt=""></div>
+														<div class="para-img para-3" data-depth="0.40"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/06.png" alt=""></div>
+														<div class="para-img para-4" data-depth="0.35"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/07.png" alt=""></div>
+														<div class="para-img para-5" data-depth="0.30"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/08.png" alt=""></div>
+														<div class="para-img para-6" data-depth="0.25"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/09.png" alt=""></div>
+														<div class="para-img para-7" data-depth="0.20"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/10.png" alt=""></div>
+														<div class="para-img para-8 para-top" data-depth="0"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/11.png" alt=""></div>
+														<div class="para-img para-9 para-top" data-depth="0"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain_v2/text.png" alt=""></div>
 													</div>													
 											   </div>
 
 											   <div class="swiper-slide page__pagination">
 													<div class="page__pagination">
-														<a href="http://www.gcreativelab.com/about/" class="btn__top">
+														<a href="http://www.gcreativelab.com/about/" class="btn__top" style="background: #221609;">
 															<span>ABOUT US</span>
-															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
+															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up_white.svg" height="62" width="62" alt="">
 															<div class="bg__arrow">
 																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-03.svg" height="316" width="316" alt="">
 															</div>
 														</a>
-														<a href="/" class="btn__btm">
+														<a href="/" class="btn__btm" style="background: #221609;">
 																<span>OUR WORK...</span>
-															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
+															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up_down.svg" height="62" width="62" alt="">
 															<div class="bg__arrow">
 																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-04.svg" height="316" width="316" alt="">
 															</div>
