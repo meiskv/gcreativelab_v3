@@ -122,27 +122,6 @@ get_header(); ?>
                                 <div class="swiper-slide about__whole_map_v3">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about_v2/presence.svg" height="70%" width="80%" style="height: 100%; padding: 0;" alt="">
                                 </div>
-                                
-                                <!-- <div class="swiper-slide page__pagination">
-										<div class="page__pagination">
-											<a href="http://www.gcreativelab.com/services/" class="btn__top btn__pagination__services">
-												
-												<span>SERVICES</span>
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
-												<div class="bg__arrow">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-01.svg" height="316" width="316" alt="">
-												</div>
-											</a>
-											<a href="http://www.gcreativelab.com/case/" class="btn__btm btn__pagination__work">
-													
-													<span>OUR WORK</span>
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
-												<div class="bg__arrow">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-02.svg" height="316" width="316" alt="">
-												</div>
-											</a>
-										</div>
-								</div> -->
 
 								<!-- Inner Slide End -->
 							</div>
