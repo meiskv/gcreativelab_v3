@@ -143,20 +143,36 @@ get_header(); ?>
                                             <?php endwhile; ?>
                                             <?php endif; ?>
 
-
-
-                                           
+                                            <div class="swiper-slide page__pagination">
+                                                    <div class="page__pagination">
+                                                        <a href="http://www.gcreativelab.com/services/" class="btn__top top__text">
+                                                            <span style="color: #0F294B;">SERVICES</span>
+                                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
+                                                            <div class="bg__arrow">
+                                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/page_pagination/services_up.svg" height="316" width="316" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <a href="http://www.gcreativelab.com/about/" class="btn__btm">
+                                                                <span style="color: #0F294B;">ABOUT</span>
+                                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
+                                                            <div class="bg__arrow">
+                                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/page_pagination/about_btm.svg" height="316" width="316" alt="">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                               </div>
                                                 
 											
 										</div>
-										<!-- Add Pagination -->
+                                        <!-- Add Pagination -->
+                                        
 										<!-- <div class="swiper-pagination"></div> -->
 									</div>
 
 
 
 								<!--  -->
-						</div>
+                        </div>                        
 					</div>
 				</div>
                                         </div>

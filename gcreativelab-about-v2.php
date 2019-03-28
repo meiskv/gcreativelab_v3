@@ -125,20 +125,20 @@ get_header(); ?>
 
 								<div class="swiper-slide page__pagination">
 										<div class="page__pagination">
-											<a href="http://www.gcreativelab.com/" class="btn__top btn__pagination__services">
+											<a href="http://www.gcreativelab.com/" class="btn__top btn__pagination__services top__text" style="background: #2f8683;">
 												
-												<span>HOME</span>
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
+												<span style="color:#fff;">HOME</span>
+												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up_white.svg" height="62" width="62" alt="">
 												<div class="bg__arrow">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-01.svg" height="316" width="316" alt="">
+														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/page_pagination/home.svg" height="316" width="316" alt="">
 												</div>
 											</a>
-											<a href="http://www.gcreativelab.com/services/" class="btn__btm btn__pagination__work">
+											<a href="http://www.gcreativelab.com/services/" class="btn__btm btn__pagination__work" style="background: #2f8683;">
 													
-													<span>OUR SERVICES</span>
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
+													<span style="color:#fff;">SERVICES</span>
+												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up_down.svg" height="62" width="62" alt="">
 												<div class="bg__arrow">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-02.svg" height="316" width="316" alt="">
+														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/page_pagination/services.svg" height="316" width="316" alt="">
 												</div>
 											</a>
 										</div>

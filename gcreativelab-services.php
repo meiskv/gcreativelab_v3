@@ -150,18 +150,18 @@ get_header(); ?>
 
 											   <div class="swiper-slide page__pagination">
 													<div class="page__pagination">
-														<a href="http://www.gcreativelab.com/about/" class="btn__top" style="background: #221609;">
-															<span>ABOUT US</span>
+														<a href="http://www.gcreativelab.com/about/" class="btn__top top__text" style="background: #221609;">
+															<span style="color:#fff;">ABOUT</span>
 															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up_white.svg" height="62" width="62" alt="">
 															<div class="bg__arrow">
-																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-03.svg" height="316" width="316" alt="">
+																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/page_pagination/about_us.svg" height="316" width="316" alt="">
 															</div>
 														</a>
-														<a href="/" class="btn__btm" style="background: #221609;">
-																<span>OUR WORK...</span>
+														<a href="http://www.gcreativelab.com/case/" class="btn__btm" style="background: #221609;">
+																<span style="color:#fff;">WORK</span>
 															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up_down.svg" height="62" width="62" alt="">
 															<div class="bg__arrow">
-																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-04.svg" height="316" width="316" alt="">
+																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/page_pagination/work.svg" height="316" width="316" alt="">
 															</div>
 														</a>
 													</div>

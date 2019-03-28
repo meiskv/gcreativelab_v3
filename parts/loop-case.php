@@ -345,6 +345,7 @@ $queryFirst = new WP_Query( $argsFirstPost );
                                     
                                     <?php } ?>
                                </div>
+                               
                         </div>
                         
                     </div>

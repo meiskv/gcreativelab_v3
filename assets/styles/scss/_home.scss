@@ -733,12 +733,77 @@ $pink: #D81C5C;
                 bottom: unset;
                 right: unset;
                 padding: unset;
-                @include breakpoint(medium down) {width: 40%;}
-                @include breakpoint(xlarge down) {width: 40%;}
-                @include breakpoint(four down) {width: 40%;}
+                width: 40%;
+                @include breakpoint(medium down) {width: 100%;}
+                @include breakpoint(xlarge down) {width: 100%;}
+                @include breakpoint(four down) {width: 100%;}
             }
         }
     }
+    .top__text{
+        // background: #DDDDDD;
+        height: 100%;
+        width: 30vw;
+        display: flex;
+        align-items: flex-start;
+        margin: 0; padding: 0;
+        position: relative;
+
+        @include breakpoint(small down) {
+            width: 90vw;
+        }
+        span{
+            color: #D92360;
+            font: 700 2.5625rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            padding: 2rem;
+            position: relative;
+            z-index: 999;
+            @include breakpoint(medium down) {
+                font: 700 1.5rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            }
+            @include breakpoint(xlarge down) {
+                font: 700 2rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            }
+            @include breakpoint(small down) {
+                font: 700 1.3rem/150% "futura-pt", AppleGothic, sans-serif;
+                padding-left: 2rem;
+                padding-bottom: 1rem;
+            }
+            
+        }
+        img{
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            padding: 0;
+            @include breakpoint(small down) {
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+        }
+        .bg__arrow{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            img{
+                position: unset;
+                bottom: unset;
+                right: unset;
+                padding: unset;
+                width: 40%;
+                @include breakpoint(medium down) {width: 100%;}
+                @include breakpoint(xlarge down) {width: 100%;}
+                @include breakpoint(four down) {width: 100%;}
+            }
+        }
+    }
+
+    
     a:hover{
         background: #898989;
         span{

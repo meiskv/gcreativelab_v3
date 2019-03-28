@@ -36,8 +36,8 @@
         /* Center slide text vertically */
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 20vw;
+        // align-items: center;
+        width: auto;
         height:100vh;
         @include breakpoint(small down) {
             justify-content: flex-end;
