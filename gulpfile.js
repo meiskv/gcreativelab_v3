@@ -34,6 +34,12 @@ const SOURCE = {
 		'node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js',
 		'node_modules/parallax-js/src/parallax.min.js',
 		'node_modules/lodash/lodash.min.js',
+		// 'node_modules/three/build/three.min.js',
+		// 'node_modules/giojs/build/gio.min.js',
+		// 'node_modules/giojs/build/extra/three.min.js',
+		// 'node_modules/d3/d3.min.js',
+		// 'node_modules/planetary.js/dist/planetaryjs.min.js',
+
 		
 
 		// Foundation core - needed if you want to use any of the components below
