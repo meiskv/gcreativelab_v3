@@ -120,8 +120,7 @@ get_header(); ?>
                                 </div>
                                 
                                 <div class="swiper-slide about__whole_map_v3">
-									<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about_v2/presence.svg" height="70%" width="80%" style="height: 100%; padding: 0;" alt=""> -->
-									<canvas id='quakeCanvas'></canvas>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about_v2/presense_2.svg" height="100%" width="80%" style="height: 80%; padding: 0;" alt="">
 								
                                 </div>
 

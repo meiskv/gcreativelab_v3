@@ -282,8 +282,9 @@
     }
 
     .about__whole_map_v3{
-        width: inherit;
+        width: auto;
         background: #2F8683;
+        display: flex;
         @include breakpoint(small down) { 
             text-align: right;
         }
