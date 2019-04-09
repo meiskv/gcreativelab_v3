@@ -344,6 +344,13 @@
                 @include breakpoint(small down) {
                     font: 500 1rem/100% "futura-pt", AppleGothic, sans-serif;
                 }
+
+                p{
+                    font: normal 1rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+                    @include breakpoint(four down) {
+                    font: normal .8rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+                    }
+                }
             }
         }
     }
