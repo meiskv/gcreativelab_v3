@@ -166,12 +166,12 @@
             }// Case Title Ends
             .case__deliverables{
                 h4{
-                    font: normal 1.4375rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                    font: normal 1.1375rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                     @include breakpoint(small down) {
-                        font: normal 1.4375rem/80% "futura-pt", AppleGothic, sans-serif;
+                        font: normal 1.1375rem/80% "futura-pt", AppleGothic, sans-serif;
                     }
                     @include breakpoint(four down) {
-                        font: normal 1rem/80% "futura-pt", AppleGothic, sans-serif;
+                        font: normal 1rem/80% "futura-pt", AppleGothic, sans-serif ;
                     }
                 }
             } // Case Deliverables Ends
@@ -280,6 +280,9 @@
             font: normal 1rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             color: #5d5d5d;
             @include breakpoint(small down) {
+                font: normal 0.8rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            }
+            @include breakpoint(four down) {
                 font: normal 0.8rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             }
         }
