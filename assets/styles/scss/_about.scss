@@ -2,7 +2,11 @@
     color: #fcc210;
 }
 
-
+.logo__holder_loaded{
+    @include breakpoint(four down) {
+        height: 10% !important;
+    }
+}
 
 
 .about-container{
@@ -47,6 +51,9 @@
             display: flex;
             @include breakpoint(small down) {
                 width: 100%;
+            }
+            @include breakpoint(four down) {
+                padding-left: 26px;
             }
         }
 
