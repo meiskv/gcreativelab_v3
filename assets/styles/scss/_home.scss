@@ -734,9 +734,9 @@ $pink: #D81C5C;
                 right: unset;
                 padding: unset;
                 width: 35%;
-                @include breakpoint(medium down) {width: 100%;}
-                @include breakpoint(xlarge down) {width: 100%;}
-                @include breakpoint(four down) {width: 100%;}
+                @include breakpoint(medium down) {width: 30%;}
+                @include breakpoint(xlarge down) {width: 30%;}
+                @include breakpoint(four down) {width: 30%;}
             }
         }
     }
@@ -796,9 +796,9 @@ $pink: #D81C5C;
                 right: unset;
                 padding: unset;
                 width: 35%;
-                @include breakpoint(medium down) {width: 100%;}
-                @include breakpoint(xlarge down) {width: 100%;}
-                @include breakpoint(four down) {width: 100%;}
+                @include breakpoint(medium down) {width: 30%;}
+                @include breakpoint(xlarge down) {width: 30%;}
+                @include breakpoint(four down) {width: 30%;}
             }
         }
     }

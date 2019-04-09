@@ -170,6 +170,9 @@
                     @include breakpoint(small down) {
                         font: normal 1.4375rem/80% "futura-pt", AppleGothic, sans-serif;
                     }
+                    @include breakpoint(four down) {
+                        font: normal 1rem/80% "futura-pt", AppleGothic, sans-serif;
+                    }
                 }
             } // Case Deliverables Ends
             .case__description{
