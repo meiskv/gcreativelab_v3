@@ -203,7 +203,7 @@ $queryFirst = new WP_Query( $argsFirstPost );
                                         <h4>Subtitle</h4>
                                     </div> -->
                                     <div class="case__inner__slide__description">
-                                        <p><?php echo get_field('full_project_deliverables'); ?></p>
+                                        <?php echo get_field('full_project_deliverables'); ?>
                                     </div>
                                 </div>
                         </div>
