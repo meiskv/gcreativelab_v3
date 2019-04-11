@@ -155,11 +155,11 @@
             }
             .case__title{
                 h1{
-                    font: bold 1.75rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                    font: bold 1.75rem/130% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                     color: $pink;
                     padding: 1rem 0;
                     @include breakpoint(small down) {
-                        font: bold 1.75rem/80% "futura-pt", AppleGothic, sans-serif;
+                        font: bold 1.75rem/130% "futura-pt", AppleGothic, sans-serif;
                         padding-top: 2rem;
                     }
                 } 
