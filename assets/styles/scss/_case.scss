@@ -308,7 +308,8 @@
     } 
     // Case Inner Main Slide Ends
     .case__slide{
-        background: #ffffff00;
+        // background: #ffffff00;
+        background: #fff;
         width: auto;
         // height: 100vh;
         height: 100%;
@@ -340,13 +341,14 @@
             .case__inner__slide__description{
                 font: 500 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                 color: #5D5D5D;
-                margin: 2rem;
+                margin: 0;
                 @include breakpoint(small down) {
                     font: 500 1rem/100% "futura-pt", AppleGothic, sans-serif;
                 }
 
                 p{
                     font: normal 1rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+                    margin: 2rem;
                     @include breakpoint(four down) {
                     font: normal .8rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
                     }
