@@ -81,7 +81,7 @@ get_header(); ?>
                                             <?php
                                             
                                             $paged          = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-                                            $posts_per_page = 10;
+                                            $posts_per_page = 11;
                                             $args = array(
                                                 'post_type'         => 'case-study',
                                                 'posts_per_page'    => $posts_per_page,
