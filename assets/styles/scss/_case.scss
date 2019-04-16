@@ -447,9 +447,11 @@
             }
         }
         .case__prev__title span, .case__next__title span{
-            font: 700 2.5625rem/100% "Century Gothic", CenturyGothic, sans-serif;
+            font: 700 2.5625rem/120% "Century Gothic", CenturyGothic, sans-serif;
             color: #D92360;
             transition: .3s;
+            display: flex;
+            max-width: 500px;
             @include breakpoint(small down) {
                 font: 700 1.4rem/100% "futura-pt", AppleGothic, sans-serif;
                 color: #ffffff;
