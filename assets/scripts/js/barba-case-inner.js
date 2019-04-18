@@ -19,7 +19,14 @@
 
               var menuHeight = $('.menu');
               TweenMax.set(menuHeight,{height: $wwCh});
-              
+
+              // var vidHeight = $('video');
+              // TweenMax.set(vidHeight,{height: $wwCh});
+
+              var vidWidth = $('.wp-video-shortcode').width();
+              var vidMainHolder = $('.vidmain-holder');
+              TweenMax.set(vidMainHolder,{width: vidWidth});
+            
     
               if (svgLoadedHolder.getElementsByTagName('div').length) {
                 console.log('div already added.');

@@ -138,12 +138,14 @@ $queryFirst = new WP_Query( $argsFirstPost );
                                 <span class="indicatorText">Scroll</span>&nbsp;to Navigate&nbsp;<div id="indicator_loader" style="width: 34px; height: 34px;"></div>
                             </div>
                         </div>
-                        
-                    
-
+                        <!-- START OEMBED -->
+                        <div class="swiper-slide vidmain-holder">
+                            <div class="placer"></div>
+                            <?php the_field('oembed'); ?>
+                        </div>
+                        <!-- END OEMBED -->
                         <div class="swiper-slide second-slide case__slide">
                             <img src="<?php echo $client_img['url']; ?>" width="100%" height="100%" alt="">
-                            
                         </div>
 
                         <div class="swiper-slide case__slide case__slide__description__holder">

@@ -510,3 +510,48 @@
         margin-bottom: 1.5rem;
     }
 }
+
+.widescreen{
+    width:auto;
+    height: 100%;
+}
+
+.mejs-controls {
+    display: none !important;
+    visibility: hidden !important;
+}
+video{
+    width: auto !important;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    height: 100vh !important;
+}
+
+.wp-video,.nothing{
+    width: 100% !important;
+    max-width: unset !important;
+    height: unset !important;
+}
+
+#mep_0{
+    height: auto !important;
+    width: auto !important;
+}
+
+.vidmain-holder{
+    position: relative;
+}
+
+.placer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
